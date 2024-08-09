@@ -1,8 +1,5 @@
 import modules.entities.Banco.Banco;
 import modules.entities.Cliente.Cliente;
-import modules.entities.Conta.Conta;
-import modules.products.ContaCorrente;
-import modules.products.ContaPoupanca;
 
 public class Main {
 
