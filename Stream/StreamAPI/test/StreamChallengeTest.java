@@ -2,10 +2,8 @@ import exercicio.StreamChallenge;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class StreamChallengeTest {
 
