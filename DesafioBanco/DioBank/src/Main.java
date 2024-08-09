@@ -1,18 +1,24 @@
+import modules.entities.Banco.Banco;
+import modules.entities.Cliente.Cliente;
+import modules.entities.Conta.Conta;
+import modules.products.ContaCorrente;
+import modules.products.ContaPoupanca;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Cliente venilton = new Cliente();
-		venilton.setNome("Felipe");
-		
-		Conta cc = new ContaCorrente(venilton);
-		Conta poupanca = new ContaPoupanca(venilton);
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		
-		cc.imprimirExtrato();
-		poupanca.imprimirExtrato();
+		Banco banco = new Banco();
+
+		banco.cadastrarCliente("Felipe Garcia");
+		Cliente cliente = banco.findCliente("Felipe Garcia");
+
+		banco.abrirContaCorrente(cliente);
+
+		var contas = banco.findContaCorrenteByCliente(cliente);
+		System.out.println(contas);
+
+
 	}
 
 }

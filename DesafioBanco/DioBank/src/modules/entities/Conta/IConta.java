@@ -1,3 +1,4 @@
+package modules.entities.Conta;
 
 public interface IConta {
 	
